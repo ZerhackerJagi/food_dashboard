@@ -19,7 +19,7 @@ analysis of food (r/food and spoonacular)
 
 
 ## Mining your own data
-1. Setting up your environment on debian based systems
+### 1. Setting up your environment on debian based systems
 
 1.1. Install your database
 
@@ -86,7 +86,7 @@ create table users(
    if you used nano use ctrl+o -> enter -> ctrl+x to safe and exit  
 
 ## Analyze the data on your own
-1. Start your notebook
+### 1. Start your notebook
 
    jupyter notebook (leads you to your browser - start exploring)  
 
