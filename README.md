@@ -11,11 +11,11 @@ analysis of food (r/food and spoonacular)
 ## Basic Usage
 1. Setting everything up
 
-⋅⋅⋅git clone https://github.com/ZerhackerJagi/food_dashboard.git
-⋅⋅⋅cd food_dashboard
-⋅⋅⋅python -m venv name_of_your_project
-⋅⋅⋅source ./name_of_your_project/bin/activate
-⋅⋅⋅pip install -r requirements.txt
+   git clone https://github.com/ZerhackerJagi/food_dashboard.git  
+   cd food_dashboard  
+   python -m venv name_of_your_project  
+   source ./name_of_your_project/bin/activate  
+   pip install -r requirements.txt  
 
 
 ## Mining your own data
@@ -23,12 +23,12 @@ analysis of food (r/food and spoonacular)
 
 1.1. Install your database
 
-⋅⋅⋅sudo apt update
-⋅⋅⋅sudo apt install mariadb
+   sudo apt update  
+   sudo apt install mariadb  
 
 1.2. Making it safe
 
-⋅⋅⋅sudo mysql_safe_installation
+   sudo mysql_safe_installation  
 ```
 Change the root password? y
 Remove anonymous users? y
@@ -39,8 +39,8 @@ Reload privilege tables now? y
 
 1.3. Configuring your database
 
-⋅⋅⋅mysql -u root -p [Enter] your_root_password [Enter]
-⋅⋅⋅create database reddit
+   mysql -u root -p [Enter] your_root_password [Enter]  
+   create database reddit  
 
 ```mysql
 create table reddit( 
@@ -72,23 +72,23 @@ create table users(
 
 ```
 
-⋅⋅⋅create user 'reddituser'@'localhost' identified by 'your_password';
-⋅⋅⋅grant all on reddit.* to 'reddituser'@'localhost';
-⋅⋅⋅flush privileges
+   create user 'reddituser'@'localhost' identified by 'your_password';  
+   grant all on reddit.* to 'reddituser'@'localhost';  
+   flush privileges  
 
 2. Creating a cronjob for the crawler
 
-⋅⋅⋅crontab -e (choose the editor you like - easiest of course is nano)
-⋅⋅⋅move to the last line and enter the following
+   crontab -e (choose the editor you like - easiest of course is nano)  
+   move to the last line and enter the following  
 ```
 */10 * * * * /usr/bin/python3.7 /path/to/your/scraper/reddit_scraper.py
 ```
-⋅⋅⋅if you used nano use ctrl+o -> enter -> ctrl+x to safe and exit
+   if you used nano use ctrl+o -> enter -> ctrl+x to safe and exit  
 
 ## Analyze the data on your own
 1. Start your notebook
 
-⋅⋅⋅jupyter notebook (leads you to your browser - start exploring)
+   jupyter notebook (leads you to your browser - start exploring)  
 
 
 
