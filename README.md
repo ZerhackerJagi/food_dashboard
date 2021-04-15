@@ -9,7 +9,7 @@ analysis of food (r/food and spoonacular)
 
 
 ## Basic Usage
-1. Setting everything up
+### 1. Setting everything up
 
    git clone https://github.com/ZerhackerJagi/food_dashboard.git  
    cd food_dashboard  
